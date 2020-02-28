@@ -1,16 +1,19 @@
-import React from 'react';
-import './Styles.css';
+import React, {Component} from "react"
 
-class Home extends React.Component {
+class Home extends Component {
+    constructor() {
+        super()
+    }
+    
     render() {
         return (
-            <div className="Banner">
-                <header className="Home-header">
-                    BEST COMMUNITY SERVICES
-                </header>
+            <div>
+                    <button>Login</button>
+                    <button>Donate</button>
+                    <h2>Mission Statment</h2>
             </div>
-        );
+        )
     }
 }
 
-export default Home;
+export default Home
