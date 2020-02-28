@@ -1,32 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
+    margin: 0;
+    background-color: whitesmoke;
 }
 
-.App {
-  text-align: center;
+header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: red;
 }
 
-.Home-header {
-  background-color: red;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: calc(20px + 2vmin);
-  font-weight: bold;
-  padding-top: 5vh;
-  padding-left: 10vh;
-  color: black;
+header > img {
+    height: 80%;
+    margin-left: 20%;
 }
 
-.Home-header > img {
-  height: 80%;
-  margin-right: 10%;
-}
-
-.Home-header > p { 
-  font-size: 50px;
-  margin-left: 10%;
+header > p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 5px;
+    padding-top: 10px;
 }
 
 .Main-content {
