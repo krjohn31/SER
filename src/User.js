@@ -3,7 +3,7 @@ import React, {Component} from "react";
 /*
 This class displays the User's main page.
 */
-class Home extends Component {
+class User extends Component {
     constructor() {
         super()
         let pageId = 2;
