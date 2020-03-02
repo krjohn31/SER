@@ -4,7 +4,6 @@ import employee from '.\Employee';
 import volunteer from '.\Volunteer';
 import user from '.\User';
 import register from '.\Register';
-import donate from '.\Donate';
 import payment from '.\Payment';
 
 /*
@@ -27,22 +26,18 @@ class Control extends Component {
               currentPage = register;
               break;
             case 2:
-              // Return Donation Page
-              currentPage = donate;
-              break;
-            case 3:
               // Return General User Page
               currentPage = user;
               break;
-            case 4:
+            case 3:
               // Return Volunteer Page
               currentPage = volunteer;
               break;
-            case 5:
+            case 4:
               // Return Employee Page
               currentPage = employee;
               break;
-            case 6:
+            case 5:
               // Return the Payment Page
               currentPage = payment;
               break;
