@@ -1,11 +1,11 @@
-import react from 'react';
+import React, {Component} from "react";
 
 /*
 This class is the Registration page for a user to enter
 their personal information and be added to the User database.
 */
 
-class Regiser extends React.Component {
+class Regiser extends react.Component {
   constructor() {
     super()
     createUser()
