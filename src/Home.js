@@ -17,7 +17,15 @@ class Home extends Component {
         while (userdatabase[current] != NULL) {
             if(user === current.userName  && password === current.password) {
                 //Check if user is volunter or employee
-                
+                if(current.status === employee) {
+                    <h2>Welcome Employee!</h2>
+                }
+                else if(current.status === volunteer) {
+                    <h2>Welcome Volunteer!</h2>
+                }
+                else {
+                    <h2>Welcome User!</h2>
+                }
             }
             current++;
         }
