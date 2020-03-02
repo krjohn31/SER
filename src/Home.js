@@ -11,9 +11,22 @@ class Home extends Component {
     and validates 
     */
     function login() {
+        var current = 0;
+        
+        /*
+        Prompt user for their Login credentials
+        */
+        <label>Username: </label>
+        <input name="userName" class="req">userName</input>
+        <label>Password: </label>
+        <input name="password" class="req">password</input>
+        
         let user = this.props.userName;
         let password = this.props.password;
-        var current = 0;
+        
+        /*
+        Search the user database with the given login credentials
+        */
         while (userdatabase[current] != NULL) {
             if(user === current.userName  && password === current.password) {
                 //Check if user is volunter or employee
