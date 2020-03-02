@@ -12,7 +12,7 @@ class Regiser extends Component {
   }
   
   render() {
-    return(
+    return (
       /*
       Prompt user for their name
       */
@@ -127,3 +127,5 @@ class Regiser extends Component {
     )
   }
 }
+
+extend default Register
