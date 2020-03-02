@@ -22,27 +22,27 @@ class Control extends Component {
           let currentPage = home;
           
           switch (pageId) {
-            case 0:
+            case 1:
               // Return Register Page
               currentPage = register;
               break;
-            case 1:
+            case 2:
               // Return Donation Page
               currentPage = donate;
               break;
-            case 2:
+            case 3:
               // Return General User Page
               currentPage = user;
               break;
-            case 3:
+            case 4:
               // Return Volunteer Page
               currentPage = volunteer;
               break;
-            case 4:
+            case 5:
               // Return Employee Page
               currentPage = employee;
               break;
-            case 5:
+            case 6:
               // Return the Payment Page
               currentPage = payment;
               break;
