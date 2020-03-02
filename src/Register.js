@@ -9,6 +9,7 @@ class Regiser extends Component {
   constructor() {
     super()
     createUser()
+    let pageId = 1;
   }
   
   render() {
