@@ -19,9 +19,9 @@ class User extends Component {
       return (
         // Iterate through services table and display them
         for(var i=0; services[i]!=NULL; i++) {
-            System.out.print.services[i].name;
-            System.out.print.services[i].description;
-            System.out.print.services[i].date;
+            <p>services[i].name<\p>
+            <p>services[i].description<\p>
+            <p>services[i].date<\p>
         }
       )
     }
@@ -31,8 +31,16 @@ class User extends Component {
     current user has requested
     */
     function upcomingServices() {
+        // Get list of upcoming services
+        var services[] = servicesSQL.getTable();
+        var i = 0;
       return (
-      
+        while(services[i].getRequestor() === currentUser.name) {
+            <p>services[i].name<\p>
+            <p>services[i].description<\p>
+            <p>services[i].date<\p>
+            i++;
+        }
       )
     }
     
@@ -40,7 +48,7 @@ class User extends Component {
         return (
             <div>
                     <img src="./images/calendar.png"/>
-                    <h2>Welcome User!</h2>
+                    <h2>Welcome User!<\h2>
                     <currentServices />
                     <upcomingServices />
             </div>
