@@ -31,7 +31,7 @@ class User extends Component {
     render() {
         return (
             <div>
-                    <img src="calendar.png"/>
+                    <img src="./images/calendar.png"/>
                     <h2>Welcome User!</h2>
                     <currentServices />
                     <upcomingServices />
