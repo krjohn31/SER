@@ -47,6 +47,26 @@ class Home extends Component {
         }
         <h2>Login Attempt Failed</h2>
     }
+        
+    /*
+    This function displays the current services available
+    and their status
+    */
+    function currentServices() {
+      return (
+      
+      )
+    }
+    
+    /*
+    This function displays the current news within the community
+    */
+    function currentNews() {
+      return (
+      
+      )
+    }
+
     render() {
         return (
             <div>
