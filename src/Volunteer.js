@@ -31,8 +31,16 @@ class Volunteer extends Component {
     current volunteer is enlisted for
     */
     function enlistedServices() {
-      return (
-      
+        // Get list of upcoming services
+        var services[] = servicesSQL.getTable();
+        var i = 0;
+        return (
+            while(services[i].getVolunteer() === currentUser.name) {
+                <p>services[i].name<\p>
+                <p>services[i].description<\p>
+                <p>services[i].date<\p>
+                i++;
+            }
       )
     }
     
