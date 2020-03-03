@@ -19,9 +19,9 @@ class Employee extends Component {
       return (
         // Iterate through services table and display them
         for(var i=0; services[i]!=NULL; i++) {
-            System.out.print.services[i].name;
-            System.out.print.services[i].description;
-            System.out.print.services[i].date;
+            <p>services[i].name<\p>
+            <p>services[i].description<\p>
+            <p>services[i].date<\p>
         }
       )
     }
@@ -33,20 +33,20 @@ class Employee extends Component {
     function createService() {
         newService = NULL;
       return (
-          <label>Service Name</label>
-          <input name="sName" class="req">sName</input>
+          <label>Service Name<\label>
+          <input name="sName" class="req">sName<\input>
           
-          <label>Description</label>
-          <input name="description" class="req">description</input>
+          <label>Description<\label>
+          <input name="description" class="req">description<\input>
                     
-          <label>Date</label>
-          <input name="date" class="req">date</input>
+          <label>Date<\label>
+          <input name="date" class="req">date<\input>
           
-          <label>Volunteers Needed</label>
-          <input name="volNeeded" class="req">volNeeded</input>
+          <label>Volunteers Needed<\label>
+          <input name="volNeeded" class="req">volNeeded<\input>
           
-          <label>Location</label>
-          <input name="location" class="req">location</input>
+          <label>Location<\label>
+          <input name="location" class="req">location<\input>
           
           newService.add(sName, description, date, volNeeded, location);
       )
@@ -56,7 +56,7 @@ class Employee extends Component {
         return (
             <div>
                     <img src="./images/calendar.png"/>
-                    <h2>Welcome Employee!</h2>
+                    <h2>Welcome Employee!<\h2>
                     <currentServices />
                     <createService />
             </div>
