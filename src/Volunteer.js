@@ -31,7 +31,7 @@ class Volunteer extends Component {
     render() {
         return (
             <div>
-                    <img src="calendar.png"/>
+                    <img src="./images/calendar.png"/>
                     <h2>Welcome Volunteer!</h2>
                     <currentServices />
                     <enlistedServices />
