@@ -53,6 +53,8 @@ class Home extends Component {
                     <button onClick="login()">Login</button>
                     <button>Donate</button>
                     <h2>Mission Statment</h2>
+                    <currentServices />
+                    <currentNews />
             </div>
         )
     }
