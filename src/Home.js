@@ -19,10 +19,10 @@ class Home extends Component {
         /*
         Prompt user for their Login credentials
         */
-        <label>Username: </label>
-        <input name="userName" class="req">userName</input>
-        <label>Password: </label>
-        <input name="password" class="req">password</input>
+        <label>Username: <\label>
+        <input name="userName" class="req">userName<\input>
+        <label>Password: <\label>
+        <input name="password" class="req">password<\input>
         
         let user = this.props.userName;
         let password = this.props.password;
@@ -34,18 +34,18 @@ class Home extends Component {
             if(user === current.userName  && password === current.password) {
                 //Check if user is volunter or employee
                 if(current.status === employee) {
-                    <h2>Welcome Employee!</h2>
+                    <h2>Welcome Employee!<\h2>
                 }
                 else if(current.status === volunteer) {
-                    <h2>Welcome Volunteer!</h2>
+                    <h2>Welcome Volunteer!<\h2>
                 }
                 else {
-                    <h2>Welcome User!</h2>
+                    <h2>Welcome User!<\h2>
                 }
             }
             current++;
         }
-        <h2>Login Attempt Failed</h2>
+        <h2>Login Attempt Failed<\h2>
     }
         
     /*
@@ -58,9 +58,9 @@ class Home extends Component {
       return (
         // Iterate through services table and display them
         for(var i=0; services[i]!=NULL; i++) {
-            System.out.print.services[i].name;
-            System.out.print.services[i].description;
-            System.out.print.services[i].date;
+          <p>services[i].name<\p>
+          <p>services[i].description<\p>
+          <p>services[i].date<\p>
         }
       )
     }
@@ -70,16 +70,17 @@ class Home extends Component {
     */
     function currentNews() {
       return (
-      
+          <h1>Headline<\h1>
+          <p>body<\p>
       )
     }
 
     render() {
         return (
             <div>
-                    <button onClick="login()">Login</button>
-                    <button>Donate</button>
-                    <h2>Mission Statment</h2>
+                    <button onClick="login()">Login<\button>
+                    <button>Donate<\button>
+                    <h2>Mission Statment<\h2>
                     <currentServices />
                     <currentNews />
             </div>
