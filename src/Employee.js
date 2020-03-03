@@ -31,8 +31,24 @@ class Employee extends Component {
     to register a new service
     */
     function createService() {
+        newService = NULL;
       return (
-      
+          <label>Service Name</label>
+          <input name="sName" class="req">sName</input>
+          
+          <label>Description</label>
+          <input name="description" class="req">description</input>
+                    
+          <label>Date</label>
+          <input name="date" class="req">date</input>
+          
+          <label>Volunteers Needed</label>
+          <input name="volNeeded" class="req">volNeeded</input>
+          
+          <label>Location</label>
+          <input name="location" class="req">location</input>
+          
+          newService.add(sName, description, date, volNeeded, location);
       )
     }
     
